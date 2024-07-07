@@ -1,0 +1,40 @@
+. b
+2. b
+3. b
+4. b
+5. c
+6. const people = [
+ { id: 1, name: 'John', age: 30 },
+ { id: 2, name: 'Jane', age: 25 },
+ { id: 3, name: 'Bob', age: 40 },
+ ]; 
+ const namesArray = people.map(person => person.name);
+console.log(namesArray);
+const salaryArray=people.map(person => ({ id:person.id,
+name:person.name,age:person.age,salary:5000}));
+console.log(salaryArray);
+const above30 = people
+  .filter(person => person.age > 30)
+  .map(({ name, age }) => ({ name, age }));
+console.log(above30);
+
+7. function main(cb1, cb2, x, y) {
+    const sum = cb1(x, y);
+    const difference = cb2(x, y);
+    console.log(Sum: ${sum}, Difference: ${difference});
+}
+
+const cb1 = (a, b) => a + b;
+
+const cb2 = (a, b) => a - b;
+
+const x = 11;
+const y = 4;
+main(cb1, cb2, x, y);
+
+8. c
+10. c
+11. b
+12. a
+13. a
+Comment
